@@ -1,0 +1,297 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+body.index{
+    background-image: url("../img/back.png");
+}
+
+fieldset {
+    width: 300px;
+    right: 110px;
+    margin-left: 2em;
+}
+/* cor somatorio */
+div.mm input:focus:invalid, div.mm textarea:focus:invalid{
+    box-shadow: 0 0 5px #FF0000;
+    border-color: #FF0000
+
+}
+
+div.mm input:required:valid, div.mm textarea:required:valid { /* when a field is considered valid by the browser */
+    
+    box-shadow: 0 0 5px #00FF00;
+    border-color: #00FF00;
+}
+
+/* cor somatorio */
+div.somatorio input:focus:invalid, div.somatorio textarea:focus:invalid{
+    box-shadow: 0 0 5px #FF0000;
+    border-color: #FF0000
+
+}
+
+div.somatorio input:required:valid, div.somatorio textarea:required:valid { /* when a field is considered valid by the browser */
+    
+    box-shadow: 0 0 5px #00FF00;
+    border-color: #00FF00;
+}
+
+/* cor fatorial */
+div.fatorial input:focus:invalid, div.fatorial textarea:focus:invalid{
+    box-shadow: 0 0 5px #FF0000;
+    border-color: #FF0000
+
+}
+
+div.fatorial input:required:valid, div.fatorial textarea:required:valid { /* when a field is considered valid by the browser */
+    
+    box-shadow: 0 0 5px #00FF00;
+    border-color: #00FF00;
+}
+
+/* Mudança de cor do input das informações do aluno. */
+div.info input:focus:invalid, div.info textarea:focus:invalid{
+    margin: 10px;
+    box-shadow: 0 0 5px #FF0000;
+    border-color: #FF0000
+
+}
+
+div.info input:required:valid, div.info textarea:required:valid { /* when a field is considered valid by the browser */
+    
+    box-shadow: 0 0 5px #00FF00;
+    border-color: #00FF00;
+}
+
+
+div.notas{
+    display: flex;
+
+}
+
+div.nota1{
+    margin: 10px;
+}
+/* mudança de cor do input das notas*/
+div.notas input:focus:invalid, div.notas textarea:focus:invalid{
+    box-shadow: 0 0 5px #FF0000;
+    border-color: #FF0000
+
+}
+
+div.notas input:required:valid, div.notas textarea:required:valid { /* when a field is considered valid by the browser */
+    box-shadow: 0 0 5px #00FF00;
+    border-color: #00FF00;
+}
+
+div.nota2{
+    margin: 10px;
+}
+
+div.nota3{
+    margin: 10px;
+}
+
+img{
+    width: 300px;
+}
+
+img:hover{
+    border: 5px solid
+    black;
+}
+
+div.imgs{
+    margin-top: 5em;
+
+}
+
+/* butão pra pagina inicial*/
+.bt {
+    border:1px solid #25692A;
+    border-radius:4px;
+    display:inline-block;
+    cursor:pointer;
+    font-family:Verdana;
+    font-weight:bold;
+    font-size:12px;
+    padding:6px 10px;
+    text-decoration:none;
+}
+
+.bt:active {
+    position:relative;
+    top:2px;
+}
+
+/* txt dos inputs*/
+:-moz-placeholder {
+    color: #A8C9FC;
+}
+ 
+::-webkit-input-placeholder {
+    color: #A8C9FC;
+}
+
+/* buttons que chamam as funções dos calculos de cada pagina.*/
+button.finalizar {
+    background-color: #68b12f;
+    background: -webkit-gradient(linear, left top, left bottom, from(#68b12f), to(#50911e));
+    background: -webkit-linear-gradient(top, #68b12f, #50911e);
+    background: -moz-linear-gradient(top, #68b12f, #50911e);
+    background: -ms-linear-gradient(top, #68b12f, #50911e);
+    background: -o-linear-gradient(top, #68b12f, #50911e);
+    background: linear-gradient(top, #68b12f, #50911e);
+    border: 1px solid #509111;
+    border-bottom: 1px solid #5b992b;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    box-shadow: inset 0 1px 0 0 #9fd574;
+    -webkit-box-shadow: 0 1px 0 0 #9fd574 inset ;
+    -moz-box-shadow: 0 1px 0 0 #9fd574 inset;
+    -ms-box-shadow: 0 1px 0 0 #9fd574 inset;
+    -o-box-shadow: 0 1px 0 0 #9fd574 inset;
+    color: white;
+    font-weight: bold;
+    padding: 6px 20px;
+    text-align: center;
+    text-shadow: 0 -1px 0 #396715;
+}
+button.finalizar:hover {
+    opacity:.85;
+    cursor: pointer; 
+}
+button.finalizar:active {
+    border: 1px solid #20911e;
+    box-shadow: 0 0 10px 5px #356b0b inset; 
+    -webkit-box-shadow:0 0 10px 5px #356b0b inset ;
+    -moz-box-shadow: 0 0 10px 5px #356b0b inset;
+    -ms-box-shadow: 0 0 10px 5px #356b0b inset;
+    -o-box-shadow: 0 0 10px 5px #356b0b inset;
+     
+}
+
+button.btFat {
+    background-color: #68b12f;
+    background: -webkit-gradient(linear, left top, left bottom, from(#68b12f), to(#50911e));
+    background: -webkit-linear-gradient(top, #68b12f, #50911e);
+    background: -moz-linear-gradient(top, #68b12f, #50911e);
+    background: -ms-linear-gradient(top, #68b12f, #50911e);
+    background: -o-linear-gradient(top, #68b12f, #50911e);
+    background: linear-gradient(top, #68b12f, #50911e);
+    border: 1px solid #509111;
+    border-bottom: 1px solid #5b992b;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    box-shadow: inset 0 1px 0 0 #9fd574;
+    -webkit-box-shadow: 0 1px 0 0 #9fd574 inset ;
+    -moz-box-shadow: 0 1px 0 0 #9fd574 inset;
+    -ms-box-shadow: 0 1px 0 0 #9fd574 inset;
+    -o-box-shadow: 0 1px 0 0 #9fd574 inset;
+    color: white;
+    font-weight: bold;
+    padding: 6px 20px;
+    text-align: center;
+    text-shadow: 0 -1px 0 #396715;
+}
+button.btFat:hover {
+    opacity:.85;
+    cursor: pointer; 
+}
+button.btFat:active {
+    border: 1px solid #20911e;
+    box-shadow: 0 0 10px 5px #356b0b inset; 
+    -webkit-box-shadow:0 0 10px 5px #356b0b inset ;
+    -moz-box-shadow: 0 0 10px 5px #356b0b inset;
+    -ms-box-shadow: 0 0 10px 5px #356b0b inset;
+    -o-box-shadow: 0 0 10px 5px #356b0b inset;
+     
+}
+
+button.btSoma {
+    background-color: #68b12f;
+    background: -webkit-gradient(linear, left top, left bottom, from(#68b12f), to(#50911e));
+    background: -webkit-linear-gradient(top, #68b12f, #50911e);
+    background: -moz-linear-gradient(top, #68b12f, #50911e);
+    background: -ms-linear-gradient(top, #68b12f, #50911e);
+    background: -o-linear-gradient(top, #68b12f, #50911e);
+    background: linear-gradient(top, #68b12f, #50911e);
+    border: 1px solid #509111;
+    border-bottom: 1px solid #5b992b;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    box-shadow: inset 0 1px 0 0 #9fd574;
+    -webkit-box-shadow: 0 1px 0 0 #9fd574 inset ;
+    -moz-box-shadow: 0 1px 0 0 #9fd574 inset;
+    -ms-box-shadow: 0 1px 0 0 #9fd574 inset;
+    -o-box-shadow: 0 1px 0 0 #9fd574 inset;
+    color: white;
+    font-weight: bold;
+    padding: 6px 20px;
+    text-align: center;
+    text-shadow: 0 -1px 0 #396715;
+}
+button.btSoma:hover {
+    opacity:.85;
+    cursor: pointer; 
+}
+button.btSoma:active {
+    border: 1px solid #20911e;
+    box-shadow: 0 0 10px 5px #356b0b inset; 
+    -webkit-box-shadow:0 0 10px 5px #356b0b inset ;
+    -moz-box-shadow: 0 0 10px 5px #356b0b inset;
+    -ms-box-shadow: 0 0 10px 5px #356b0b inset;
+    -o-box-shadow: 0 0 10px 5px #356b0b inset;
+     
+}
+
+button.btMM {
+    background-color: #68b12f;
+    background: -webkit-gradient(linear, left top, left bottom, from(#68b12f), to(#50911e));
+    background: -webkit-linear-gradient(top, #68b12f, #50911e);
+    background: -moz-linear-gradient(top, #68b12f, #50911e);
+    background: -ms-linear-gradient(top, #68b12f, #50911e);
+    background: -o-linear-gradient(top, #68b12f, #50911e);
+    background: linear-gradient(top, #68b12f, #50911e);
+    border: 1px solid #509111;
+    border-bottom: 1px solid #5b992b;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    box-shadow: inset 0 1px 0 0 #9fd574;
+    -webkit-box-shadow: 0 1px 0 0 #9fd574 inset ;
+    -moz-box-shadow: 0 1px 0 0 #9fd574 inset;
+    -ms-box-shadow: 0 1px 0 0 #9fd574 inset;
+    -o-box-shadow: 0 1px 0 0 #9fd574 inset;
+    color: white;
+    font-weight: bold;
+    padding: 6px 20px;
+    text-align: center;
+    text-shadow: 0 -1px 0 #396715;
+}
+button.btMM:hover {
+    opacity:.85;
+    cursor: pointer; 
+}
+button.btMM:active {
+    border: 1px solid #20911e;
+    box-shadow: 0 0 10px 5px #356b0b inset; 
+    -webkit-box-shadow:0 0 10px 5px #356b0b inset ;
+    -moz-box-shadow: 0 0 10px 5px #356b0b inset;
+    -ms-box-shadow: 0 0 10px 5px #356b0b inset;
+    -o-box-shadow: 0 0 10px 5px #356b0b inset;
+     
+}

@@ -1,0 +1,75 @@
+<html>
+
+<head>
+    <title>Calculo Notas</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="text/javascript" src="js/notas.js"></script>
+</head>
+
+<body>
+
+    <br>
+    <!--<p><a href="pagInicial.html">Página Inicial</a> </p> -->
+    <form method="get" action="pagInicial.html">
+        <button class="bt" type="submit">Página Inicial</button></form>
+    <br>
+
+
+    <fieldset>
+        <legend style="padding:0 10px;"> Informações do Aluno </legend>
+
+        <div class="info">
+            Nome: <div> <input type="text" id="txtNomeCalc" placeholder="Infome o Nome" required /> <span
+                    class='msg-erro msg-nome'></span> </div>
+            <br>
+            Matricula: <div><input type="text" id="txtMatriculaCalc" placeholder="Infome a Matricula" required /> </div>
+        </div>
+
+        <div class="notas">
+            <div class="nota1">
+                Nota 1: <br> <input type="text" id="txtNota1" class="aluno_nota1" placeholder="Nota 1" required onkeypress="toma(event)"/>
+            </div>
+            <br>
+            <div class="nota2">
+                Nota 2: <br> <input type="text" id="txtNota2" class="aluno_nota2" placeholder="Nota 2" required onkeypress="toma(event)"/>
+            </div>
+            <br>
+            <div class="nota3">
+                Nota 3: <br> <input type="text" id="txtNota3" class="aluno_nota3" placeholder="Nota 3" required onkeypress="toma(event)"/>
+            </div>
+        </div>
+
+        <br>
+        <input type="checkbox" name="participacao" id="partok" value="participou"> Participou do Dia T
+        <br><br>
+
+        <button class="finalizar" onclick="Calcular()">Calcular</button>
+
+
+
+
+    </fieldset>
+    <br><br>
+
+    <fieldset>
+        <legend style="padding:0 10px;"> Resultado </legend>
+        <br>
+        Aluno: <p id="nomee"></p>
+        <br>
+        Média: <p id="mensagem"></p>
+        <br>
+        <input type="checkbox" name="chkAprov" id="chkAprovado"> Aprovado
+        <br><br>
+
+
+
+    </fieldset>
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<html>
+
+<head>
+    <title>Página Fatorial</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="text/javascript" src="js/calcs.js"></script>
+</head>
+
+<body>
+
+    <br>
+    <!--<p><a href="pagInicial.html">Página Inicial</a> </p> -->
+    <form method="get" action="pagInicial.html">
+        <button class="bt" type="submit">Página Inicial</button></form>
+    <br>
+
+
+    <fieldset>
+        <legend> Cálculo Fatorial </legend>
+        <br>
+        <div class="fatorial">
+            Fatorial: <input type="number" id="txtFatorial" required onkeypress="toma(event)"/>
+        </div>
+        <br><br>
+
+        <button class="btFat"onclick="Fatorial()" >Fatorial</button>
+
+        <p id="mensagem"></p>
+
+    </fieldset>
+</body>
+
+</html>

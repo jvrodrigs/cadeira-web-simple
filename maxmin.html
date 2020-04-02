@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Min e Max</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script type="text/javascript" src="js/maxmin.js"></script>
+</head>
+
+<body>
+
+  <br>
+  <!--<p><a href="pagInicial.html">Página Inicial</a> </p> -->
+  <form method="get" action="pagInicial.html">
+    <button class="bt" type="submit">Página Inicial</button></form>
+  <br>
+  <fieldset>
+    <legend>Máximo e Mínimo:</legend>
+    <br>
+    <div class="mm">
+      Numeral: <input type="text" id="numeroM" required onkeypress="toma(event)" placeholder="Ex: 123,321"/>
+    </div>
+    <br><br>
+    <button class="btMM" onclick="MaxMin()"> Calcular </button>
+    <br><br>
+    <p id="resultado"></p>
+  </fieldset>
+
+</body>
+
+</html>
